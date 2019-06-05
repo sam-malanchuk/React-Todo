@@ -1,0 +1,47 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#root {
+    background-color: #1ccad8;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+form input {
+    border: 1px solid #587291;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+
+button {
+    border: 1px solid #587291;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 0 5px;
+    background-color: #2f97c1;
+}
+
+button:hover {
+    background-color: #587291;
+    cursor: pointer;
+}
+
+h2 {
+    color: #000;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

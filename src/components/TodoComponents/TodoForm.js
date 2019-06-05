@@ -4,8 +4,8 @@ function TodoForm(props) {
     return (
     <form onSubmit={props.passSubmitHandler}>
         <input type="text" name="task" onChange={props.passChangeHandler} placeholder="Enter Task.." />
-        <button>Add To-do</button>
-        <button>Clear Completed</button>
+        <button type="submit">Add To-do</button>
+        <button type="button">Clear Completed</button>
     </form>
     );
 }
