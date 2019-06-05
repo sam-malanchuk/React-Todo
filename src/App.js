@@ -23,6 +23,7 @@ class App extends React.Component {
       completed: false
     }
     this.setState({toDoList: [...this.state.toDoList, newItem]});
+    event.target.value = "";
   }
   changeHandler = event => {
     this.setState({toDoItem: event.target.value});
@@ -31,7 +32,7 @@ class App extends React.Component {
     return (
       <div>
           <h2>Welcome to your Todo App!</h2>
-        <TodoList /> 
+        <TodoList data={this.state.toDoList} /> 
         <TodoForm passChangeHandler={this.changeHandler} passSubmitHandler={this.submitHandler}/>
       </div>
     );
