@@ -5,7 +5,7 @@ function TodoList(props) {
     return (
         <ul>
             {props.data.map(item => {
-                return <Todo value={item.task} key={item.id} completed={item.completed} />;
+                return <Todo item={item} value={item.task} key={item.id} completed={item.completed} toggleCompleted={props.toggleCompleted} />;
             })}
         </ul>
     );

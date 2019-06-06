@@ -41,6 +41,17 @@ ul li {
     margin: 10px 0;
 }
 
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::after {
+    content: " ✓";
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
