@@ -40,7 +40,6 @@ class App extends React.Component {
       completed: false
     }
     this.setState({toDoList: [...this.state.toDoList, newItem]});
-    this.setState({toDoItem: ""});
   }
   changeHandler = event => {
     this.setState({toDoItem: event.target.value});
