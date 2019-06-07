@@ -59,12 +59,19 @@ class App extends React.Component {
     );
     this.setState({toDoList: newList });
   }
+  clearHandler = event => {
+    console.log("clicked");
+    const newList = this.state.toDoList.filter(listItem => {
+      return !listItem.completed;
+    });
+    this.setState({toDoList: newList });
+  }
   render() {
     return (
       <div>
           <h2>Welcome to your Todo App!</h2>
         <TodoList data={this.state.toDoList} toggleCompleted={this.toggleCompleted} /> 
-        <TodoForm passChangeHandler={this.changeHandler} passSubmitHandler={this.submitHandler}/>
+        <TodoForm passClearHandler={this.clearHandler} passChangeHandler={this.changeHandler} passSubmitHandler={this.submitHandler}/>
       </div>
     );
   }

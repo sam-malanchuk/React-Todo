@@ -9,7 +9,7 @@ function TodoForm(props) {
     <form onSubmit={innerSubmitHandler}>
         <input id="toDoListInput" type="text" name="task" onChange={props.passChangeHandler} placeholder="Enter Task.." />
         <button type="submit">Add To-do</button>
-        <button type="button">Clear Completed</button>
+        <button type="button" onClick={props.passClearHandler}>Clear Completed</button>
     </form>
     );
 }
