@@ -2,8 +2,12 @@ import React from 'react';
 
 function TodoForm(props) {
     const innerSubmitHandler = event => {
-        props.passSubmitHandler(event);
-        document.getElementById("toDoListInput").value = "";
+        event.preventDefault();
+        const inputField = document.getElementById("toDoListInput");
+        if(inputField.value !== "") {
+            props.passSubmitHandler(event);
+            inputField.value = "";
+        }
     }
     return (
     <form onSubmit={innerSubmitHandler}>
