@@ -66,7 +66,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-          <h2>Welcome to your Todo App!</h2>
+          <h2>My To-Do</h2>
         <TodoList data={this.state.toDoList} toggleCompleted={this.toggleCompleted} /> 
         <TodoForm passClearHandler={this.clearHandler} passChangeHandler={this.changeHandler} passSubmitHandler={this.submitHandler}/>
       </div>
