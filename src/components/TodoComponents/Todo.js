@@ -5,7 +5,7 @@ function Todo(props) {
         props.toggleCompleted(props.item.id)
     }
     return (
-        <li className={`${props.item.completed ? "checked" : ""}`} onClick={clickHandler} >{props.item.task}</li>
+        <li className={`${props.item.completed ? "checked" : ""}`} onClick={clickHandler} ><span>{props.item.task}</span></li>
     );
 }
 
